@@ -1,0 +1,32 @@
+.test{
+    background-color: aquamarine;
+}
+
+.cocktail-img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding-left: -10%;
+}
+
+.cocktail-div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.level{
+    background-color: lightgray;
+    height: 10px;
+    border: 10px;
+    width: 20%;
+    border-color: white;
+}
+
+.level.active{
+    background-color: gray;
+}
+
+.tasting-container{
+    padding-left: 2.5%;
+    padding-bottom: 2%;
+}
