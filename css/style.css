@@ -14,11 +14,9 @@ body{
     --c2: #6f8b6910;
     
     background:
-        conic-gradient(at 60% 60%,var(--c1) 75%, #0000 0)
-            0 0/calc(5*var(--s)/2) calc(5*var(--s)/2),
-        repeating-conic-gradient(var(--c1) 0 25%, #0000 0 50%)
-            0 0/calc(5*var(--s)) calc(5*var(--s)),
-        repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
+        conic-gradient(at 60% 60%,var(--c1) 75%, #0000 0) 0 0/calc(5*var(--s)/2) calc(5*var(--s)/2),
+        repeating-conic-gradient(var(--c1) 0 25%, #0000 0 50%) 0 0/calc(5*var(--s)) calc(5*var(--s)),
+        repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%) 0 0/var(--s) var(--s);
 }
 
 .ingredients-table td{
