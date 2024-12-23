@@ -397,5 +397,115 @@ const functionCards = () => {
 }
 
 
-functionCards()
+//functionCards()
 
+const postContainer = document.querySelectio('.cocktail.div')
+
+const postMethods = ()=>{
+	if(document.cookie == "sortRatingReverse"){
+         arrayData.sort((a,b) => a.rating - b.rating)
+         arrayData.reverse()
+     }
+     else if (document.cookie == "sortRating"){
+       arrayData.sort((a,b) => a.rating - b.rating)
+     }
+     else if (document.cookie == "sortStrengthReverse"){
+       arrayData.sort((a,b) => a.strength - b.strength)
+       arrayData.reverse()
+     }
+     else if ( document.cookie == "sortStrength"){
+       arrayData.sort((a,b) => a.strength - b.strength)
+     }
+    
+    arrayData.map((data) => {
+      
+      strArray = calc_Str(data.strength);
+        var strStart = strArray[0]
+        var strMiddle = strArray[1]
+        var strEnd = strArray[2]
+
+        ratingArray = calc_Rank(data.rating);
+        var hasStar = ratingArray[0]
+        var star1Active = ratingArray[1]
+        var star2Active = ratingArray[2]
+        var star3Active = ratingArray[3]
+        var star4Active = ratingArray[4]
+        var star5Active = ratingArray[5]
+        
+        if(data.rating == 0){
+          var rating = "N/A"
+          }else{
+            var rating = data.rating
+            }
+            
+        const postElement = document.createElement('div');
+        postElement.classList.add('cocktail-card')
+        postElement.innerHTML=`
+        <div class="container cocktail-div poppins-regular"> 
+        <div class="cocktail-card">
+        <!-- Create 1 Main row, the rest are nested inside-->
+        <div class="row">
+          <!-- Vertical Seperator Column-->
+          <div class="col-1" style="width: 10px">
+            <div class="vr" style="height: 100%"></div>
+          </div>
+          <!-- The other columns, containing title - desc - ingredients -->
+          <div class="col-11">
+            <!-- Row containing image - title - ingredients-->
+            <div class="row">
+              <!-- Picture div-->
+              <div class="col-sm-12 col-md-6 order-sm-1 order-md-1">
+              <a href=${data.recipe}>
+                <img
+                  src="${data.imagePath}"
+                  class="img-fluid rounded mx-auto d-block cocktail-img"
+                  alt="Moscow Mule Cocktail"
+                />
+              </a>
+              </div>
+              <!-- Title, Description and ingredients-->
+              <div class="col-sm-12 col-md-6 order-sm-2 order-md-2">
+                <h1 class="poppins-bold">${data.title}</h1>
+                <!-- Strength meter -->
+                <h4 class="poppins-regular-italic">Strength</h4>
+                <div class="row tasting-container">
+                  <div class="${strStart}"></div>
+                  <div class="${strMiddle}"></div>
+                  <div class="${strEnd}"></div>
+                </div>
+                <div class="row ranking-container">
+                  <h4 class="poppins-regular-italic" style="padding-top:5px; margin-bottom: 10px";>Rating</h4>
+                    <div class="col-2 star-ranking"><span class="star-ranking">${rating}</span> <div class="${hasStar}" style="color: #576e52;"></div></div>
+                    <div class="col-2 ranking-meter rounded-start ${star1Active}"></div>
+                    <div class="col-2 ranking-meter ${star2Active}"></div>
+                    <div class="col-2 ranking-meter ${star3Active}"></div>
+                    <div class="col-2 ranking-meter ${star4Active}"></div>
+                    <div class="col-2 ranking-meter rounded-end ${star5Active}"></div>
+                </div>
+                <h3>Ingredients :</h3>
+                <table class="table ingredients-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">What</th>
+                      <th scope="col">Qty</th>
+                    </tr>
+                  </thead>
+                  <tbody>${data.in_test}</tbody>
+                </table>
+              </div>
+            </div>
+            <!-- Row containing desc -->
+            <div class="row">
+              <p class="desc">${data.desc}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>`
+      
+      postContainer.appendChild(postElement)  
+      }
+    
+}
+
+postMethods()
