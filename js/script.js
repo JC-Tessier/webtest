@@ -227,8 +227,8 @@ const arrayData = [
     title: "Backyard Iced Tea",
     recipe:
       "https://www.liquor.com/recipes/back-yard-tea/",
-    strength: 2,
-    rating: 0,
+    strength: 1,
+    rating: 4,
     ingredients: [
       { What: "Whiskey", Qty: "2 1/2 oz" },
       { What: "Angostura bitters", Qty: "3 Drops" },
