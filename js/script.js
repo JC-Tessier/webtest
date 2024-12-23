@@ -504,7 +504,7 @@ const postMethods = ()=>{
       </div>`
       
       postContainer.appendChild(postElement)  
-      }
+      })
     
 }
 
