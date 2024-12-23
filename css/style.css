@@ -1,3 +1,18 @@
+body{
+    min-width:580px;        /* Suppose you want minimum width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:580px;            /* As IE6 ignores !important it will set width as 1000px; */
+    background-color: #fdfcfc
+}
+
+.ingredients-table td{
+    background-color: #fdfcfc;
+}
+
+.ingredients-table th{
+    background-color: #edf0ed;
+}
+
 .test{
     background-color: aquamarine;
 }
@@ -6,6 +21,7 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     padding-left: -10%;
+    width: 100%;
 }
 
 .cocktail-div{
@@ -13,20 +29,91 @@
     padding-bottom: 20px;
 }
 
-
 .level{
-    background-color: lightgray;
+    background-color: #edf0ed;
     height: 10px;
     border: 10px;
-    width: 20%;
+    width: 5.5em;
     border-color: white;
 }
 
 .level.active{
-    background-color: gray;
+    background-color: #576e52;
 }
 
 .tasting-container{
     padding-left: 2.5%;
     padding-bottom: 2%;
 }
+
+.desc{
+    padding-top: 5px;
+    margin-bottom: 0px;
+    font-size: medium;
+
+}
+
+.ranking-meter{
+    background-color: #edf0ed;
+    height: 10px;
+    margin-top: 6px;
+    margin-left: -5px;
+    width: 3em;
+}
+
+.ranking-meter.active{
+    background-color: #576e52;
+}
+
+.star-ranking{
+    max-width: 60px;
+    font-size: large;
+}
+
+.fa.fa-star.checked{
+    color: #496147;
+}
+
+@media (min-width: 768px) {
+    .star-ranking{
+        max-width: 60px;
+        font-size: medium;
+    }
+}
+
+.dropdown-row{
+    padding-left: -12px;
+}
+
+.sort-button{
+    background-color: #fdfcfc;
+    color: #576e52;
+    border-color: #fdfcfc;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: large;
+
+    margin-top: 20px;
+    margin-bottom: -37px;
+
+    padding: 0px 8px 0px 8px;
+}
+
+.sort-button:hover{
+    background-color: #576e52;
+}
+
+.sort-button::after{
+    background-color: #576e52;
+}
+
+.sort-button:focus{
+    background-color: #576e52;
+}
+
+.sort-button:focus-visible{
+    color: #fdfcfc;
+    background-color: #576e52;
+    border-color: #576e525e;
+}
+
