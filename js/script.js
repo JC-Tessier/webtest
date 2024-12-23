@@ -399,7 +399,7 @@ const functionCards = () => {
 
 //functionCards()
 
-const postContainer = document.querySelectio('.cocktail.div')
+const postContainer = document.querySelection('.cocktail.div')
 
 const postMethods = ()=>{
 	if(document.cookie == "sortRatingReverse"){
