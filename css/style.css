@@ -1,8 +1,24 @@
 body{
-    min-width:580px;        /* Suppose you want minimum width of 1000px */
+    min-width:429px;        /* Suppose you want minimum width of 1000px */
     width: auto !important;  /* Firefox will set width as auto */
-    width:580px;            /* As IE6 ignores !important it will set width as 1000px; */
-    background-color: #fdfcfc
+    width:429px;            /* As IE6 ignores !important it will set width as 1000px; */
+}
+
+.pattern{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    
+    --s: 10px;
+    --c1: #fdfcfc;
+    --c2: #6f8b6910;
+    
+    background:
+        conic-gradient(at 60% 60%,var(--c1) 75%, #0000 0)
+            0 0/calc(5*var(--s)/2) calc(5*var(--s)/2),
+        repeating-conic-gradient(var(--c1) 0 25%, #0000 0 50%)
+            0 0/calc(5*var(--s)) calc(5*var(--s)),
+        repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
 }
 
 .ingredients-table td{
@@ -53,12 +69,26 @@ body{
 
 }
 
+.container-fluid{
+    position: absolute;
+    }
+
 .ranking-meter{
     background-color: #edf0ed;
     height: 10px;
     margin-top: 6px;
     margin-left: -5px;
     width: 3em;
+}
+
+.desc{
+    padding-top: 5px;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+
+p.desc{
+    font-size: 1.2em;
 }
 
 .ranking-meter.active{
@@ -79,6 +109,13 @@ body{
         max-width: 60px;
         font-size: medium;
     }
+    .cocktail-img{
+        aspect-ratio: 1/1.4;
+        }
+        
+    h1{
+        padding-top: 10px;
+        }
 }
 
 .dropdown-row{
@@ -117,3 +154,25 @@ body{
     border-color: #576e525e;
 }
 
+@media (min-width: 992px) {
+    .cocktail-img{
+        aspect-ratio: 1/1.1;
+        }
+}
+
+@media (min-width: 429px) {
+    .ingredients-table{
+        font-size: 1em;
+        }
+        
+    p.desc{
+        font-size: 1em;
+        }
+    h1{
+        padding-top: 5px;
+        }
+        
+    .ranking-meter{
+        margin-top: 8px;
+        }
+}
