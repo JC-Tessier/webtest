@@ -359,6 +359,8 @@ const functionCards = () => {
     arrayData.reverse();
   } else if (document.cookie == "sortStrength") {
     arrayData.sort((a, b) => a.strength - b.strength);
+  } else {
+    arrayData.sort((a, b) => a.id - b.id);
   }
 
   arrayData.map((data) => {
@@ -382,7 +384,7 @@ const functionCards = () => {
     }
 
     cardContainer.innerHTML += `
-<div class="container cocktail-div poppins-regular"> 
+        <div class="container cocktail-div poppins-regular"> 
           <div class="cocktail-card">
           <!-- Create 1 Main row, the rest are nested inside-->
           <div class="row">
