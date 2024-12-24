@@ -225,7 +225,12 @@ const arrayData = [
     id: 13,
     imagePath: "./img/backyard-iced-tea.png",
     title: "Backyard Iced Tea",
+<<<<<<< HEAD
     recipe: "https://www.liquor.com/recipes/back-yard-tea/",
+=======
+    recipe:
+      "https://www.liquor.com/recipes/back-yard-tea/",
+>>>>>>> 9b0ed300c0207b92a6143a95ccd0779bd0a9a9d9
     strength: 1,
     rating: 4,
     ingredients: [
