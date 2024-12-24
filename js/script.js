@@ -225,12 +225,7 @@ const arrayData = [
     id: 13,
     imagePath: "./img/backyard-iced-tea.png",
     title: "Backyard Iced Tea",
-<<<<<<< HEAD
     recipe: "https://www.liquor.com/recipes/back-yard-tea/",
-=======
-    recipe:
-      "https://www.liquor.com/recipes/back-yard-tea/",
->>>>>>> 9b0ed300c0207b92a6143a95ccd0779bd0a9a9d9
     strength: 1,
     rating: 4,
     ingredients: [
@@ -284,7 +279,7 @@ const arrayData = [
     desc: "The <b>Vodka and Coke</b> cocktail has a smooth, slightly sweet flavor, with the crisp, neutral taste of vodka complementing the rich, caramel and fizzy sweetness of cola.",
   },
   {
-    id: 15,
+    id: 16,
     imagePath: "./img/rum-coke.png",
     title: "Rum and Coke",
     recipe: "https://www.thespruceeats.com/rum-and-coke-recipe-760560",
@@ -303,7 +298,7 @@ const arrayData = [
     desc: "The <b>Rum and Coke</b> cocktail has a smooth, slightly sweet flavor, with the rich, molasses-like taste of rum blending harmoniously with the caramel and fizzy sweetness of cola.",
   },
   {
-    id: 16,
+    id: 17,
     imagePath: "./img/Caipiroska.png",
     title: "Caipiroska",
     recipe: "https://www.liquor.com/recipes/caipiroska-2/",
@@ -322,7 +317,7 @@ const arrayData = [
     desc: "The <b>Caipiroska</b> has a refreshing, tangy flavor, with the muddled lime providing a zesty citrus punch, balanced by the smoothness of vodka and a touch of sweetness from sugar.",
   },
   {
-    id: 17,
+    id: 18,
     imagePath: "./img/screwdriver.jpg",
     title: "Screwdriver",
     recipe: "https://www.allrecipes.com/recipe/222410/screwdriver-cocktail/",
