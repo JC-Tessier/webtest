@@ -595,27 +595,27 @@ const functionCards = () => {
 const postContainer = document.querySelector('.cocktail-div')
 
 const postMethods = () => {
-  if (document.cookie == "sortRatingReverse") {
+  if (document.cookie.includes("sortRatingReverse")) {
     arrayData.sort((a, b) => a.rating - b.rating);
     arrayData.reverse();
-  } else if (document.cookie == "sortRating") {
+  } else if (document.cookie.includes("sortRating")) {
     arrayData.sort((a, b) => a.rating - b.rating);
-  } else if (document.cookie == "sortStrengthReverse") {
+  } else if (document.cookie.includes("sortStrengthReverse")) {
     arrayData.sort((a, b) => a.strength - b.strength);
     arrayData.reverse();
-  } else if (document.cookie == "sortTitle") {
+  } else if (document.cookie.includes("sortTitle")) {
     arrayData.sort((a, b) => {
       if (a.title < b.title) {
         return -1;
       }
     });
-  } else if (document.cookie == "sortTitleReverse") {
+  } else if (document.cookie.includes("sortTitleReverse")) {
     arrayData.sort((a, b) => {
       if (a.title > b.title) {
         return -1;
       }
     });
-  } else if (document.cookie == "sortStrength") {
+  } else if (document.cookie.includes("sortStrength")) {
     arrayData.sort((a, b) => a.strength - b.strength);
   } else {
     arrayData.sort((a, b) => a.id - b.id);
