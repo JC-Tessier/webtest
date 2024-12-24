@@ -174,3 +174,10 @@ p.desc{
         margin-top: 8px;
         }
 }
+
+@media (max-width: 395px) {
+    .star-ranking{
+        max-width: 60px;
+        font-size: small;
+    }
+}

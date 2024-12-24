@@ -225,10 +225,9 @@ const arrayData = [
     id: 13,
     imagePath: "./img/backyard-iced-tea.png",
     title: "Backyard Iced Tea",
-    recipe:
-      "https://www.liquor.com/recipes/back-yard-tea/",
-    strength: 2,
-    rating: 0,
+    recipe: "https://www.liquor.com/recipes/back-yard-tea/",
+    strength: 1,
+    rating: 4,
     ingredients: [
       { What: "Whiskey", Qty: "2 1/2 oz" },
       { What: "Angostura bitters", Qty: "3 Drops" },
@@ -241,14 +240,127 @@ const arrayData = [
       "<tr><td>Spiced Rum</td><td>2 oz</td></tr><tr><td>Lemonade</td><td>2 oz</td></tr><tr><td>Iced Tea</td><td>2 oz</td></tr><tr><td>Lemon Wedge</td><td>Garnish</td></tr>",
     desc: "The <b>Backyard Iced Tea</b> cocktail offers a smooth and refreshing flavor profile, blending the tartness of lemonade with the sweetness of iced tea, enhanced by the warmth of spiced rum for a balanced and invigorating drink.",
   },
+  {
+    id: 14,
+    imagePath: "./img/margarita.png",
+    title: "Margarita",
+    recipe: "https://www.liquor.com/recipes/margarita/",
+    strength: 2,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey", Qty: "2 1/2 oz" },
+      { What: "Angostura bitters", Qty: "3 Drops" },
+      { What: "Orange Wedge", Qty: "1" },
+      { What: "Lemon Zest", Qty: "A bit" },
+      { What: "Sugar Cube", Qty: "1" },
+      { What: "Sour Cherries", Qty: "2" },
+    ],
+    in_test:
+      "<tr><td>Tequila</td><td>2 oz</td></tr><tr><td>Triple Sec</td><td>1/2 oz</td></tr><tr><td>Lime Juice</td><td>1 oz</td></tr><tr><td>Simple Syrup</td><td>1/2 oz</td></tr><tr><td>Lime Wedge</td><td>Garnish</td></tr>",
+    desc: "The <b>Margarita</b> has a refreshing, tangy flavor profile, combining the bright citrus notes of lime with the smooth, slightly bitter taste of tequila, balanced by the sweetness of orange liqueur and a touch of salt on the rim.",
+  },
+  {
+    id: 15,
+    imagePath: "./img/vodka-coke.png",
+    title: "Vodka and Coke",
+    recipe: "https://www.acouplecooks.com/vodka-and-coke/",
+    strength: 2,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey", Qty: "2 1/2 oz" },
+      { What: "Angostura bitters", Qty: "3 Drops" },
+      { What: "Orange Wedge", Qty: "1" },
+      { What: "Lemon Zest", Qty: "A bit" },
+      { What: "Sugar Cube", Qty: "1" },
+      { What: "Sour Cherries", Qty: "2" },
+    ],
+    in_test:
+      "<tr><td>Vodka</td><td>2 oz</td></tr><tr><td>Cola</td><td>4-5 oz</td></tr><tr><td>Lime Juice</td><td>1 oz</td></tr><tr><td>Simple Syrup</td><td>1/4 oz</td></tr>",
+    desc: "The <b>Vodka and Coke</b> cocktail has a smooth, slightly sweet flavor, with the crisp, neutral taste of vodka complementing the rich, caramel and fizzy sweetness of cola.",
+  },
+  {
+    id: 15,
+    imagePath: "./img/rum-coke.png",
+    title: "Rum and Coke",
+    recipe: "https://www.thespruceeats.com/rum-and-coke-recipe-760560",
+    strength: 2,
+    rating: 4,
+    ingredients: [
+      { What: "Whiskey", Qty: "2 1/2 oz" },
+      { What: "Angostura bitters", Qty: "3 Drops" },
+      { What: "Orange Wedge", Qty: "1" },
+      { What: "Lemon Zest", Qty: "A bit" },
+      { What: "Sugar Cube", Qty: "1" },
+      { What: "Sour Cherries", Qty: "2" },
+    ],
+    in_test:
+      "<tr><td>Dark Rum</td><td>2 oz</td></tr><tr><td>Cola</td><td>4-6 oz</td></tr><tr><td>Lime Wedge</td><td>Garnish</td></tr>",
+    desc: "The <b>Rum and Coke</b> cocktail has a smooth, slightly sweet flavor, with the rich, molasses-like taste of rum blending harmoniously with the caramel and fizzy sweetness of cola.",
+  },
+  {
+    id: 16,
+    imagePath: "./img/Caipiroska.png",
+    title: "Caipiroska",
+    recipe: "https://www.liquor.com/recipes/caipiroska-2/",
+    strength: 3,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey", Qty: "2 1/2 oz" },
+      { What: "Angostura bitters", Qty: "3 Drops" },
+      { What: "Orange Wedge", Qty: "1" },
+      { What: "Lemon Zest", Qty: "A bit" },
+      { What: "Sugar Cube", Qty: "1" },
+      { What: "Sour Cherries", Qty: "2" },
+    ],
+    in_test:
+      "<tr><td>Vodka</td><td>2 oz</td></tr><tr><td>Simple Syrup</td><td>1 oz</td></tr><tr><td>Lime</td><td>Quarters</td></tr><tr><td>Lime Wedge</td><td>Garnish</td></tr>",
+    desc: "The <b>Caipiroska</b> has a refreshing, tangy flavor, with the muddled lime providing a zesty citrus punch, balanced by the smoothness of vodka and a touch of sweetness from sugar.",
+  },
+  {
+    id: 17,
+    imagePath: "./img/screwdriver.jpg",
+    title: "Screwdriver",
+    recipe: "https://www.allrecipes.com/recipe/222410/screwdriver-cocktail/",
+    strength: 1,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey", Qty: "2 1/2 oz" },
+      { What: "Angostura bitters", Qty: "3 Drops" },
+      { What: "Orange Wedge", Qty: "1" },
+      { What: "Lemon Zest", Qty: "A bit" },
+      { What: "Sugar Cube", Qty: "1" },
+      { What: "Sour Cherries", Qty: "2" },
+    ],
+    in_test:
+      "<tr><td>Vodka</td><td>1/2 oz</td></tr><tr><td>Orange Juice</td><td>6 oz</td></tr><tr><td>Orange Slice</td><td>Garnish</td></tr>",
+    desc: "The <b>Screwdriver</b> has a simple, refreshing flavor, with the bright, tangy citrus notes of orange juice perfectly balanced by the smooth, neutral taste of vodka.",
+  },
 ];
 
-const cardContainer = document.querySelector('.cocktail-div')
+const cardContainer = document.querySelector(".cocktail-div");
+
+function clearCookie() {
+  document.cookie.split(";").forEach(function (c) {
+    document.cookie = c
+      .replace(/^ +/, "")
+      .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+  });
+}
+
+function sortTitle(dataArray) {
+  let res = dataArray.reduce((acc, curr) => {
+    let ind = acc.findIndex((item) => item.title > curr.title);
+    if (ind === -1) ind = acc.length;
+    acc.splice(ind, 0, curr);
+    return acc;
+  }, []);
+
+  return res;
+}
 
 function calc_Str(strength) {
   var returnArray = [];
   if (strength == 1) {
-    console.log("Str 1");
     returnArray.push(
       "border-end rounded-start border-3 border-light col-3 level tasting-bar active"
     );
@@ -259,7 +371,6 @@ function calc_Str(strength) {
       "border-start rounded-end border-3 border-light col-3 level tasting-bar"
     );
   } else if (strength == 2) {
-    console.log("Str 2");
     returnArray.push(
       "border-end rounded-start border-3 border-light col-3 level tasting-bar active"
     );
@@ -270,7 +381,6 @@ function calc_Str(strength) {
       "border-start rounded-end border-3 border-light col-3 level tasting-bar"
     );
   } else if (strength == 3) {
-    console.log("Str 3");
     returnArray.push(
       "border-end rounded-start border-3 border-light col-3 level tasting-bar active"
     );
@@ -312,38 +422,56 @@ function calc_Rank(rating) {
     }
   }
 
-  console.log(returnArray);
   return returnArray;
 }
 
 function sortRatingReverse() {
   // arrayData.sort((a,b) => a.rating - b.rating)
   // arrayData.reverse()
+  clearCookie();
   document.cookie = "sortRatingReverse";
   location.reload();
 }
 
 function sortRating() {
   // arrayData.sort((a,b) => a.rating - b.rating)
+  clearCookie();
   document.cookie = "sortRating";
+  location.reload();
+}
+
+function sortTitle() {
+  // arrayData.sort((a,b) => a.rating - b.rating)
+  clearCookie();
+  document.cookie = "sortTitle";
+  location.reload();
+}
+
+function sortTitleReverse() {
+  // arrayData.sort((a,b) => a.rating - b.rating)
+  clearCookie();
+  document.cookie = "sortTitleReverse";
   location.reload();
 }
 
 function sortStrengthReverse() {
   // arrayData.sort((a,b) => a.strength - b.strength)
   // arrayData.reverse()
+  clearCookie();
   document.cookie = "sortStrengthReverse";
   location.reload();
 }
 
 function sortStrength() {
   // arrayData.sort((a,b) => a.strength - b.strength)
+  clearCookie();
   document.cookie = "sortStrength";
   location.reload();
 }
 
 function sortID() {
   // arrayData.sort((a,b) => a.id - b.id)
+  clearCookie();
   document.cookie = "sortID";
   location.reload();
 }
@@ -357,6 +485,18 @@ const functionCards = () => {
   } else if (document.cookie == "sortStrengthReverse") {
     arrayData.sort((a, b) => a.strength - b.strength);
     arrayData.reverse();
+  } else if (document.cookie == "sortTitle") {
+    arrayData.sort((a, b) => {
+      if (a.title < b.title) {
+        return -1;
+      }
+    });
+  } else if (document.cookie == "sortTitleReverse") {
+    arrayData.sort((a, b) => {
+      if (a.title > b.title) {
+        return -1;
+      }
+    });
   } else if (document.cookie == "sortStrength") {
     arrayData.sort((a, b) => a.strength - b.strength);
   } else {
@@ -448,110 +588,126 @@ const functionCards = () => {
   });
 };
 
-functionCards()
+// functionCards()
 
 // const postContainer = document.querySelection(".cocktail-div");
 
-// const postMethods = () => {
-//   if (document.cookie == "sortRatingReverse") {
-//     arrayData.sort((a, b) => a.rating - b.rating);
-//     arrayData.reverse();
-//   } else if (document.cookie == "sortRating") {
-//     arrayData.sort((a, b) => a.rating - b.rating);
-//   } else if (document.cookie == "sortStrengthReverse") {
-//     arrayData.sort((a, b) => a.strength - b.strength);
-//     arrayData.reverse();
-//   } else if (document.cookie == "sortStrength") {
-//     arrayData.sort((a, b) => a.strength - b.strength);
-//   }
+const postContainer = document.querySelector('.cocktail-div')
 
-//   arrayData.map((data) => {
-//     strArray = calc_Str(data.strength);
-//     var strStart = strArray[0];
-//     var strMiddle = strArray[1];
-//     var strEnd = strArray[2];
+const postMethods = () => {
+  if (document.cookie == "sortRatingReverse") {
+    arrayData.sort((a, b) => a.rating - b.rating);
+    arrayData.reverse();
+  } else if (document.cookie == "sortRating") {
+    arrayData.sort((a, b) => a.rating - b.rating);
+  } else if (document.cookie == "sortStrengthReverse") {
+    arrayData.sort((a, b) => a.strength - b.strength);
+    arrayData.reverse();
+  } else if (document.cookie == "sortTitle") {
+    arrayData.sort((a, b) => {
+      if (a.title < b.title) {
+        return -1;
+      }
+    });
+  } else if (document.cookie == "sortTitleReverse") {
+    arrayData.sort((a, b) => {
+      if (a.title > b.title) {
+        return -1;
+      }
+    });
+  } else if (document.cookie == "sortStrength") {
+    arrayData.sort((a, b) => a.strength - b.strength);
+  } else {
+    arrayData.sort((a, b) => a.id - b.id);
+  }
 
-//     ratingArray = calc_Rank(data.rating);
-//     var hasStar = ratingArray[0];
-//     var star1Active = ratingArray[1];
-//     var star2Active = ratingArray[2];
-//     var star3Active = ratingArray[3];
-//     var star4Active = ratingArray[4];
-//     var star5Active = ratingArray[5];
+  arrayData.map((data) => {
+    strArray = calc_Str(data.strength);
+    var strStart = strArray[0];
+    var strMiddle = strArray[1];
+    var strEnd = strArray[2];
 
-//     if (data.rating == 0) {
-//       var rating = "N/A";
-//     } else {
-//       var rating = data.rating;
-//     }
+    ratingArray = calc_Rank(data.rating);
+    var hasStar = ratingArray[0];
+    var star1Active = ratingArray[1];
+    var star2Active = ratingArray[2];
+    var star3Active = ratingArray[3];
+    var star4Active = ratingArray[4];
+    var star5Active = ratingArray[5];
 
-//     const postElement = document.createElement("div");
-//     postElement.classList.add("cocktail-card");
-//     postElement.innerHTML = `
-//         <div class="container cocktail-div poppins-regular"> 
-//           <div class="cocktail-card">
-//           <!-- Create 1 Main row, the rest are nested inside-->
-//           <div class="row">
-//             <!-- Vertical Seperator Column-->
-//             <div class="col-1" style="width: 10px">
-//               <div class="vr" style="height: 100%"></div>
-//             </div>
-//             <!-- The other columns, containing title - desc - ingredients -->
-//             <div class="col-11">
-//               <!-- Row containing image - title - ingredients-->
-//               <div class="row">
-//                 <!-- Picture div-->
-//                 <div class="col-sm-12 col-md-6 order-sm-1 order-md-1">
-//                 <a href=${data.recipe}>
-//                   <img
-//                     src="${data.imagePath}"
-//                     class="img-fluid rounded mx-auto d-block cocktail-img"
-//                     alt="Moscow Mule Cocktail"
-//                   />
-//                 </a>
-//                 </div>
-//                 <!-- Title, Description and ingredients-->
-//                 <div class="col-sm-12 col-md-6 order-sm-2 order-md-2">
-//                   <h1 class="poppins-bold">${data.title}</h1>
-//                   <!-- Strength meter -->
-//                   <h4 class="poppins-regular-italic">Strength</h4>
-//                   <div class="row tasting-container">
-//                     <div class="${strStart}"></div>
-//                     <div class="${strMiddle}"></div>
-//                     <div class="${strEnd}"></div>
-//                   </div>
-//                   <div class="row ranking-container">
-//                     <h4 class="poppins-regular-italic" style="padding-top:5px; margin-bottom: 10px";>Rating</h4>
-//                       <div class="col-2 star-ranking"><span class="star-ranking">${rating}</span> <div class="${hasStar}" style="color: #576e52;"></div></div>
-//                       <div class="col-2 ranking-meter rounded-start ${star1Active}"></div>
-//                       <div class="col-2 ranking-meter ${star2Active}"></div>
-//                       <div class="col-2 ranking-meter ${star3Active}"></div>
-//                       <div class="col-2 ranking-meter ${star4Active}"></div>
-//                       <div class="col-2 ranking-meter rounded-end ${star5Active}"></div>
-//                   </div>
-//                   <h3>Ingredients :</h3>
-//                   <table class="table ingredients-table">
-//                     <thead>
-//                       <tr>
-//                         <th scope="col">What</th>
-//                         <th scope="col">Qty</th>
-//                       </tr>
-//                     </thead>
-//                     <tbody>${data.in_test}</tbody>
-//                   </table>
-//                 </div>
-//               </div>
-//               <!-- Row containing desc -->
-//               <div class="row">
-//                 <p class="desc">${data.desc}</p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>`
+    if (data.rating == 0) {
+      var rating = "N/A";
+    } else {
+      var rating = data.rating;
+    }
 
-//     postContainer.appendChild(postElement)
-//   })
-// }
+    const postElement = document.createElement('div');
+    postElement.classList.add("cocktail-card");
+    postElement.innerHTML = `
+    <div class="container cocktail-div poppins-regular"> 
+      <div class="cocktail-card">
+      <!-- Create 1 Main row, the rest are nested inside-->
+      <div class="row">
+        <!-- Vertical Seperator Column-->
+        <div class="col-1" style="width: 10px">
+          <div class="vr" style="height: 100%"></div>
+        </div>
+        <!-- The other columns, containing title - desc - ingredients -->
+        <div class="col-11">
+          <!-- Row containing image - title - ingredients-->
+          <div class="row">
+            <!-- Picture div-->
+            <div class="col-sm-12 col-md-6 order-sm-1 order-md-1">
+            <a href=${data.recipe}>
+              <img
+                src="${data.imagePath}"
+                class="img-fluid rounded mx-auto d-block cocktail-img"
+                alt="Moscow Mule Cocktail"
+              />
+            </a>
+            </div>
+            <!-- Title, Description and ingredients-->
+            <div class="col-sm-12 col-md-6 order-sm-2 order-md-2">
+              <h1 class="poppins-bold">${data.title}</h1>
+              <!-- Strength meter -->
+              <h4 class="poppins-regular-italic">Strength</h4>
+              <div class="row tasting-container">
+                <div class="${strStart}"></div>
+                <div class="${strMiddle}"></div>
+                <div class="${strEnd}"></div>
+              </div>
+              <div class="row ranking-container">
+                <h4 class="poppins-regular-italic" style="padding-top:5px; margin-bottom: 10px";>Rating</h4>
+                  <div class="col-2 star-ranking"><span class="star-ranking">${rating}</span> <div class="${hasStar}" style="color: #576e52;"></div></div>
+                  <div class="col-2 ranking-meter rounded-start ${star1Active}"></div>
+                  <div class="col-2 ranking-meter ${star2Active}"></div>
+                  <div class="col-2 ranking-meter ${star3Active}"></div>
+                  <div class="col-2 ranking-meter ${star4Active}"></div>
+                  <div class="col-2 ranking-meter rounded-end ${star5Active}"></div>
+              </div>
+              <h3>Ingredients :</h3>
+              <table class="table ingredients-table">
+                <thead>
+                  <tr>
+                    <th scope="col">What</th>
+                    <th scope="col">Qty</th>
+                  </tr>
+                </thead>
+                <tbody>${data.in_test}</tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Row containing desc -->
+          <div class="row">
+            <p class="desc">${data.desc}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+    postContainer.appendChild(postElement);
 
-// postMethods()
+  });
+};
+
+postMethods();
