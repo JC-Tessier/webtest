@@ -429,7 +429,7 @@ function sortRatingReverse() {
   // arrayData.sort((a,b) => a.rating - b.rating)
   // arrayData.reverse()
   clearCookie();
-  document.cookie = "sortRatingReverse";
+  document.cookie = "sortReverseRating";
   location.reload();
 }
 
@@ -450,7 +450,7 @@ function sortTitle() {
 function sortTitleReverse() {
   // arrayData.sort((a,b) => a.rating - b.rating)
   clearCookie();
-  document.cookie = "sortTitleReverse";
+  document.cookie = "sortReverseTitle";
   location.reload();
 }
 
@@ -458,7 +458,7 @@ function sortStrengthReverse() {
   // arrayData.sort((a,b) => a.strength - b.strength)
   // arrayData.reverse()
   clearCookie();
-  document.cookie = "sortStrengthReverse";
+  document.cookie = "sortReverseStrength";
   location.reload();
 }
 
@@ -595,12 +595,12 @@ const functionCards = () => {
 const postContainer = document.querySelector('.cocktail-div')
 
 const postMethods = () => {
-  if (document.cookie.includes("sortRatingReverse")) {
+  if (document.cookie.includes("sortReverseRating")) {
     arrayData.sort((a, b) => a.rating - b.rating);
     arrayData.reverse();
   } else if (document.cookie.includes("sortRating")) {
     arrayData.sort((a, b) => a.rating - b.rating);
-  } else if (document.cookie.includes("sortStrengthReverse")) {
+  } else if (document.cookie.includes("sortReverseStrength")) {
     arrayData.sort((a, b) => a.strength - b.strength);
     arrayData.reverse();
   } else if (document.cookie.includes("sortTitle")) {
@@ -609,7 +609,7 @@ const postMethods = () => {
         return -1;
       }
     });
-  } else if (document.cookie.includes("sortTitleReverse")) {
+  } else if (document.cookie.includes("sortReverseTitle")) {
     arrayData.sort((a, b) => {
       if (a.title > b.title) {
         return -1;
