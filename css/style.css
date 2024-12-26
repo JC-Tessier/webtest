@@ -140,10 +140,13 @@ p.desc{
 
 .sort-button::after{
     background-color: #576e52;
+
 }
 
 .sort-button:focus{
     background-color: #576e52;
+    
+    color : #fdfcfc;
 }
 
 .sort-button:focus-visible{

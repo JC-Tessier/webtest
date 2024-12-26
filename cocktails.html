@@ -23,11 +23,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  </head>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+ </head>
 
   <body>
     <div class="pattern"></div>
@@ -37,31 +37,111 @@
       <button onclick="sortRating()">Sort Rating</button>
       <button onclick="sortRatingReverse()">Sort Rating Reverse</button>
       <button onclick="sortID()">Sort ID</button> -->
-      <div class="row container mx-auto dropdown-row">
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle sort-button"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Sort
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#" onclick="sortStrength()">Strength <</a></li>
-            <li><a class="dropdown-item" href="#" onclick="sortStrengthReverse()">Strength ></a></li>
-            <li><a class="dropdown-item" href="#" onclick="sortRating()">Rating <</a></li>
-            <li><a class="dropdown-item" href="#" onclick="sortRatingReverse()">Rating ></a></li>
-            <li><a class="dropdown-item" href="#" onclick="sortTitle()">Title <</a></li>
-            <li><a class="dropdown-item" href="#" onclick="sortTitleReverse()">Title ></a></li>
-            <li><a class="dropdown-item" href="#" onclick="sortID()">Default</a></li>
-          </ul>
+      <div class="row container mx-auto justify-content-between">
+        <div class="col-2 dropdown-row">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle sort-button"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sort
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#" onclick="sortID()">Default</a>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="sortStrength()"
+                  >Strength <</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="sortStrengthReverse()"
+                  >Strength ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="sortRating()"
+                  >Rating <</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="sortRatingReverse()"
+                  >Rating ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="sortTitle()"
+                  >Title <</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="sortTitleReverse()"
+                  >Title ></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="col-2 dropdown-row">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle sort-button"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Base
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="#" onclick="baseAll()"
+                  >All</a
+                >
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="baseVodka()"
+                  >Vodka</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="baseRum()"
+                  >Rum</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="baseTequila()"
+                  >Tequila</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="baseWhiskey()"
+                  >Whiskey</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="baseTripleSec()"
+                  >Triple Sec</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        
       </div>
-      <div class="cocktail-div">
-
-      </div>
+      <div class="cocktail-div"></div>
     </div>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
   </body>
 </html>
