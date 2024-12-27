@@ -27,11 +27,45 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
- </head>
+  </head>
 
   <body>
     <div class="pattern"></div>
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary main-navbar">
+      <div class="container-fluid main-navbar">
+        <a class="navbar-brand" href="index.html">
+          <img id="nav-watermark" src="img/watermark.png" alt="Boaring" width="40" height="40" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link active poppins-light"
+              aria-current="page"
+              href="#"
+              >Cocktails</a
+            >
+            <a
+              class="nav-link poppins-light"
+              href="onDeck.html"
+              >Ingredients on Deck</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid cocktails-section">
       <!-- <button onclick="sortStrength()">Sort Strength</button>
       <button onclick="sortStrengthReverse()">Sort Strength Reverse</button>
       <button onclick="sortRating()">Sort Rating</button>
@@ -52,7 +86,7 @@
               <li>
                 <a class="dropdown-item" href="#" onclick="sortID()">Default</a>
               </li>
-              <li><hr class="dropdown-divider"></li>
+              <li><hr class="dropdown-divider" /></li>
               <li>
                 <a class="dropdown-item" href="#" onclick="sortStrength()"
                   >Strength <</a
@@ -101,23 +135,16 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
-                <a class="dropdown-item" href="#" onclick="baseAll()"
-                  >All</a
-                >
+                <a class="dropdown-item" href="#" onclick="baseAll()">All</a>
               </li>
-              <li><hr class="dropdown-divider"></li>
+              <li><hr class="dropdown-divider" /></li>
               <li>
                 <a class="dropdown-item" href="#" onclick="baseVodka()"
                   >Vodka</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  onclick="baseRum()"
-                  >Rum</a
-                >
+                <a class="dropdown-item" href="#" onclick="baseRum()">Rum</a>
               </li>
               <li>
                 <a class="dropdown-item" href="#" onclick="baseTequila()"
@@ -137,11 +164,9 @@
             </ul>
           </div>
         </div>
-        
       </div>
       <div class="cocktail-div"></div>
     </div>
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
   </body>
 </html>

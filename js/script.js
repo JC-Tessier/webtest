@@ -521,6 +521,8 @@ function startCookie(){
     setCookie("base", "All")
   }
 
+  postMethods();
+  
 }
 
 function getBase(){
@@ -725,7 +727,7 @@ const postMethods = () => {
               <img
                 src="${data.imagePath}"
                 class="img-fluid rounded mx-auto d-block cocktail-img"
-                alt="Moscow Mule Cocktail"
+                alt="${data.title}"
               />
             </a>
             </div>
@@ -777,8 +779,6 @@ const postMethods = () => {
   }
   });
 };
-
-postMethods();
 
 window.onload = function() {
   startCookie();

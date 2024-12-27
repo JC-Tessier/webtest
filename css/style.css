@@ -19,6 +19,24 @@ body{
         repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%) 0 0/var(--s) var(--s);
 }
 
+.main-navbar{
+    font-size: 1.2em;
+    background-color: #fdfcfc !important;
+}
+
+.navbar-nav a{
+    color:#49614783;
+}
+
+.nav-link.active{
+    color:#364f38 !important;
+
+}
+
+#nav-watermark{
+    filter: invert(42%) sepia(8%) saturate(1279%) hue-rotate(63deg) brightness(90%) contrast(83%);
+}
+
 .ingredients-table td{
     background-color: #fdfcfc;
 }
@@ -36,10 +54,11 @@ body{
     object-fit: cover;
     padding-left: -10%;
     width: 100%;
+    color:#364f38
 }
 
 .cocktail-div{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -67,7 +86,7 @@ body{
 
 }
 
-.container-fluid{
+.cocktails-section{
     position: absolute;
     }
 
@@ -126,9 +145,9 @@ p.desc{
     border-color: #fdfcfc;
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: large;
+    font-size: 1.2em;
 
-    margin-top: 20px;
+    margin-top: -30px;
     margin-bottom: -37px;
 
     padding: 0px 8px 0px 8px;
@@ -188,4 +207,7 @@ p.desc{
         max-width: 60px;
         font-size: small;
     }
+
+    .baseBtn{
+        margin-right: 2.5em;}
 }
