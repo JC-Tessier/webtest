@@ -6,12 +6,12 @@ body{
 
 .pattern{
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 200vw;
+    height: 200vh;
     
     --s: 10px;
     --c1: #fdfcfc;
-    --c2: #6f8b6910;
+    --c2: #6f8b6911;
     
     background:
         conic-gradient(at 60% 60%,var(--c1) 75%, #0000 0) 0 0/calc(5*var(--s)/2) calc(5*var(--s)/2),
@@ -22,6 +22,7 @@ body{
 .main-navbar{
     font-size: 1.2em;
     background-color: #fdfcfc !important;
+    min-width: none;
 }
 
 .navbar-nav a{
@@ -210,4 +211,10 @@ p.desc{
 
     .baseBtn{
         margin-right: 2.5em;}
+
+    .main-navbar{
+        font-size: 1.2em;
+        background-color: #fdfcfc !important;
+        max-width: 390px;
+    }
 }

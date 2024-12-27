@@ -517,9 +517,10 @@ function startCookie(){
 
     // var base = [''].join(',')
     // document.cookie = 'base=' + base;
-    setCookie("sort", "")
-    setCookie("base", "All")
   }
+  
+  setCookie("sort", "")
+  setCookie("base", "All")
 
   postMethods();
   
