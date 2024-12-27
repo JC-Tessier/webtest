@@ -155,6 +155,11 @@ p.desc{
     border-color: #576e525e;
 }
 
+@media (max-width: 625px){
+    .baseBtn{
+        margin-right: 2em;}
+}
+
 @media (min-width: 992px) {
     .cocktail-img{
         aspect-ratio: 1/1.1;

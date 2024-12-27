@@ -518,7 +518,7 @@ function startCookie(){
     // var base = [''].join(',')
     // document.cookie = 'base=' + base;
     setCookie("sort", "")
-    setCookie("base", "")
+    setCookie("base", "All")
   }
 
 }
