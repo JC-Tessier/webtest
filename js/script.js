@@ -350,6 +350,7 @@ function clearCookie() {
 function setCookie(cName, cValue) {
   
   document.cookie = cName + "=" + cValue + ";";
+  console.log("setCookie" + " " + cName + " '" + cValue + "'")
 }
 
 function calc_Str(strength) {
@@ -509,21 +510,21 @@ function baseTripleSec(){
 
 function startCookie(){
   currentCookies = document.cookie
-  console.log(currentCookies)
-  if(currentCookies == ""){
-    console.log("Cookies empty")
-    // var sort = [''].join(',');
-    // document.cookie = 'sort=' + sort;
+  const diffCookies = currentCookies.split(";")
+  console.log(diffCookies)
+  // if(diffCookies[0] != "sort=" && diffCookies[1] != "sort="){
+  //   console.log(diffCookies)
+  //   console.log("Cookies sort empty")
+  //   // var sort = [''].join(',');
+  //   // document.cookie = 'sort=' + sort;
 
-    // var base = [''].join(',')
-    // document.cookie = 'base=' + base;
-  }
-  
-  setCookie("sort", "")
-  setCookie("base", "All")
+  //   // var base = [''].join(',')
+  //   // document.cookie = 'base=' + base;
+  //   setCookie("sort", "")
+  //   setCookie("base", "All")
+  // }
 
   postMethods();
-  
 }
 
 function getBase(){
@@ -773,9 +774,9 @@ const postMethods = () => {
   </div>`;
   // postContainer.appendChild(postElement);
 
-    base = getBase()
+  base = getBase()
 
-  if (data.in_test.includes(getBase())){
+  if (data.in_test.includes(base)){
     postContainer.appendChild(postElement);
   }
   });

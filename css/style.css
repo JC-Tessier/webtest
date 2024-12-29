@@ -1,13 +1,13 @@
 body{
-    min-width:429px;        /* Suppose you want minimum width of 1000px */
+    min-width:340;        /* Suppose you want minimum width of 1000px */
     width: auto !important;  /* Firefox will set width as auto */
-    width:429px;            /* As IE6 ignores !important it will set width as 1000px; */
+    /* width:429px;            As IE6 ignores !important it will set width as 1000px; */
 }
 
 .pattern{
     position: fixed;
-    width: 200vw;
-    height: 200vh;
+    width: 100vw;
+    height: 100vh;
     
     --s: 10px;
     --c1: #fdfcfc;
@@ -22,7 +22,7 @@ body{
 .main-navbar{
     font-size: 1.2em;
     background-color: #fdfcfc !important;
-    min-width: none;
+    /* max-width: 90vw; */
 }
 
 .navbar-nav a{
@@ -122,19 +122,7 @@ p.desc{
     color: #496147;
 }
 
-@media (min-width: 768px) {
-    .star-ranking{
-        max-width: 60px;
-        font-size: medium;
-    }
-    .cocktail-img{
-        aspect-ratio: 1/1.4;
-        }
-        
-    h1{
-        padding-top: 10px;
-        }
-}
+
 
 .dropdown-row{
     padding-left: -12px;
@@ -180,12 +168,6 @@ p.desc{
         margin-right: 2em;}
 }
 
-@media (min-width: 992px) {
-    .cocktail-img{
-        aspect-ratio: 1/1.1;
-        }
-}
-
 @media (min-width: 429px) {
     .ingredients-table{
         font-size: 1em;
@@ -201,6 +183,7 @@ p.desc{
     .ranking-meter{
         margin-top: 8px;
         }
+    
 }
 
 @media (max-width: 395px) {
@@ -215,6 +198,38 @@ p.desc{
     .main-navbar{
         font-size: 1.2em;
         background-color: #fdfcfc !important;
-        max-width: 390px;
+        /* max-width: 97vw; */
     }
 }
+
+@media (min-width: 768px) {
+    .star-ranking{
+        max-width: 60px;
+        font-size: medium;
+    }
+    .cocktail-img{
+        aspect-ratio: 1/1.4;
+        }
+        
+    h1{
+        padding-top: 10px;
+        }
+    .baseBtn{
+        padding-left: 15px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .star-ranking{
+        font-size: 11px;
+    }
+}
+
+/* --bs-breakpoint-xs: 0;
+--bs-breakpoint-sm: 576px;
+--bs-breakpoint-md: 768px;
+--bs-breakpoint-lg: 992px;
+--bs-breakpoint-xl: 1200px;
+--bs-breakpoint-xxl: 1400px; */
+
