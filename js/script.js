@@ -208,7 +208,7 @@ const arrayData = [
     recipe:
       "https://www.allrecipes.com/recipe/228491/the-real-long-island-iced-tea/",
     strength: 3,
-    rating: 0,
+    rating: 3,
     ingredients: [
       { What: "Whiskey", Qty: "2 1/2 oz" },
       { What: "Angostura bitters", Qty: "3 Drops" },
@@ -303,7 +303,7 @@ const arrayData = [
     title: "Caipiroska",
     recipe: "https://www.liquor.com/recipes/caipiroska-2/",
     strength: 3,
-    rating: 0,
+    rating: 4,
     ingredients: [
       { What: "Whiskey", Qty: "2 1/2 oz" },
       { What: "Angostura bitters", Qty: "3 Drops" },
