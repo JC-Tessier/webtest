@@ -220,11 +220,100 @@ p.desc{
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 372px) {
     .star-ranking{
         font-size: 11px;
     }
+    .main-content-row img{
+        content-visibility: hidden;
+    }
+    .main-content-row .col-8{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .ingredient-qty{
+        margin-top: -10px;
+        font-size: medium !important;
+    }
+
+
 }
+
+.main-content-row{
+    border: #364f382d;
+    background-color: #fdfcfc75;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 1em;
+    max-width: 70%;
+    margin-left: auto;    
+    margin-right: auto;    
+}
+
+.details-div{
+    padding-left: 0px;
+}
+
+.img-div{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.ingredient-img{
+    max-width: 100px;
+    max-height: 150px;
+}
+
+.ingredient-qty{
+    font-style: italic;
+    font-size: 1.3em;
+    margin-bottom: .3em;
+}
+
+.ingredient-title{
+    padding-top: .5em;
+}
+
+.qty-container{
+    margin-left: .05em;
+}
+
+.qty-meter{
+    max-width: 5em;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 1247px) {
+    .qty-meter{
+        max-width: 4em;
+    }
+}
+
+@media (max-width: 996px) {
+    .qty-meter{
+        max-width: 3em;
+    }
+}
+
+@media (max-width: 606px) {
+    .qty-meter{
+        max-width: 2.5em;
+    }
+}
+
+
+@media (max-width: 509px) {
+    .qty-meter{
+        max-width: .5em;
+    }
+    .ingredient-img{
+        max-height: 120px;
+    }
+}
+
 
 /* --bs-breakpoint-xs: 0;
 --bs-breakpoint-sm: 576px;

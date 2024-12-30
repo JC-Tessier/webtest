@@ -1,7 +1,7 @@
 const arrayData = [
   {
     id: 1,
-    imagePath: "./img/moscow-mule.jpg",
+    imagePath: "../img/moscow-mule.jpg",
     title: "Moscow Mule",
     recipe: "https://cookieandkate.com/best-moscow-mule-recipe/",
     strength: 2,
@@ -19,7 +19,7 @@ const arrayData = [
   },
   {
     id: 2,
-    imagePath: "./img/kamikaze.jpg",
+    imagePath: "../img/kamikaze.jpg",
     title: "Kamikaze",
     recipe: "https://www.thespruceeats.com/kamikaze-cocktail-recipe-759313",
     strength: 3,
@@ -36,7 +36,7 @@ const arrayData = [
   },
   {
     id: 3,
-    imagePath: "./img/whiskey sour.jpg",
+    imagePath: "../img/whiskey sour.jpg",
     title: "Whiskey Sour",
     recipe: "https://www.thespruceeats.com/whiskey-sour-recipe-761273",
     strength: 3,
@@ -53,7 +53,7 @@ const arrayData = [
   },
   {
     id: 4,
-    imagePath: "./img/honey lemon whiskey sour.jpg",
+    imagePath: "../img/honey lemon whiskey sour.jpg",
     title: "Honey Lemon Whiskey Sour",
     recipe:
       "https://chilledmagazine.com/jack-daniels-tennessee-honey-cocktails-for-national-whiskey-sour-day/",
@@ -73,7 +73,7 @@ const arrayData = [
   },
   {
     id: 5,
-    imagePath: "./img/old-fashioned.jpg",
+    imagePath: "../img/old-fashioned.jpg",
     title: "Old Fashioned",
     recipe: "https://www.allrecipes.com/recipe/162397/classic-old-fashioned/",
     strength: 3,
@@ -92,7 +92,7 @@ const arrayData = [
   },
   {
     id: 6,
-    imagePath: "./img/dark-and-stormy.png",
+    imagePath: "../img/dark-and-stormy.png",
     title: "Dark and Stormy",
     recipe: "https://www.liquor.com/recipes/dark-n-stormy/",
     strength: 2,
@@ -111,7 +111,7 @@ const arrayData = [
   },
   {
     id: 7,
-    imagePath: "./img/jack-honey-smash.png",
+    imagePath: "../img/jack-honey-smash.png",
     title: "Jack Honey Smash",
     recipe: "https://www.jackdaniels.com/en-ca/recipes/jack-honey-smash",
     strength: 2,
@@ -130,7 +130,7 @@ const arrayData = [
   },
   {
     id: 8,
-    imagePath: "./img/jack-honey-mule.jpg",
+    imagePath: "../img/jack-honey-mule.jpg",
     title: "Jack Honey Mule",
     recipe: "https://www.jackdaniels.com/en-us/recipes/Jack-Honey-mule",
     strength: 2,
@@ -149,7 +149,7 @@ const arrayData = [
   },
   // { -- No bourbon and no honey syrup
   //   id: 9,
-  //   imagePath: "./img/gold-rush.jpg",
+  //   imagePath: "../img/gold-rush.jpg",
   //   title: "Gold Rush",
   //   strength: 2,
   //   ingredients: [
@@ -165,7 +165,7 @@ const arrayData = [
   // },
   {
     id: 10,
-    imagePath: "./img/tequil-sunrise (Custom).png",
+    imagePath: "../img/tequil-sunrise (Custom).png",
     title: "Tequila Sunrise",
     recipe: "https://onedishkitchen.com/tequila-sunrise-recipe/",
     strength: 2,
@@ -184,7 +184,7 @@ const arrayData = [
   },
   {
     id: 11,
-    imagePath: "./img/bloody-caesar.jpg",
+    imagePath: "../img/bloody-caesar.jpg",
     title: "Bloody Caesar",
     recipe: "https://cookthestory.com/the-best-bloody-caesar-recipe/",
     strength: 1,
@@ -203,7 +203,7 @@ const arrayData = [
   },
   {
     id: 12,
-    imagePath: "./img/long-island-iced-tea.jpg",
+    imagePath: "../img/long-island-iced-tea.jpg",
     title: "Long Island Iced Tea",
     recipe:
       "https://www.allrecipes.com/recipe/228491/the-real-long-island-iced-tea/",
@@ -223,7 +223,7 @@ const arrayData = [
   },
   {
     id: 13,
-    imagePath: "./img/backyard-iced-tea.png",
+    imagePath: "../img/backyard-iced-tea.png",
     title: "Backyard Iced Tea",
     recipe: "https://www.liquor.com/recipes/back-yard-tea/",
     strength: 1,
@@ -242,7 +242,7 @@ const arrayData = [
   },
   {
     id: 14,
-    imagePath: "./img/margarita.png",
+    imagePath: "../img/margarita.png",
     title: "Margarita",
     recipe: "https://www.liquor.com/recipes/margarita/",
     strength: 2,
@@ -261,7 +261,7 @@ const arrayData = [
   },
   {
     id: 15,
-    imagePath: "./img/vodka-coke.png",
+    imagePath: "../img/vodka-coke.png",
     title: "Vodka and Coke",
     recipe: "https://www.acouplecooks.com/vodka-and-coke/",
     strength: 2,
@@ -280,7 +280,7 @@ const arrayData = [
   },
   {
     id: 16,
-    imagePath: "./img/rum-coke.png",
+    imagePath: "../img/rum-coke.png",
     title: "Rum and Coke",
     recipe: "https://www.thespruceeats.com/rum-and-coke-recipe-760560",
     strength: 2,
@@ -299,7 +299,7 @@ const arrayData = [
   },
   {
     id: 17,
-    imagePath: "./img/Caipiroska.png",
+    imagePath: "../img/Caipiroska.png",
     title: "Caipiroska",
     recipe: "https://www.liquor.com/recipes/caipiroska-2/",
     strength: 3,
@@ -318,7 +318,7 @@ const arrayData = [
   },
   {
     id: 18,
-    imagePath: "./img/screwdriver.jpg",
+    imagePath: "../img/screwdriver.jpg",
     title: "Screwdriver",
     recipe: "https://www.allrecipes.com/recipe/222410/screwdriver-cocktail/",
     strength: 1,
