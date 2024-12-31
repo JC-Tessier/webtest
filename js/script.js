@@ -335,6 +335,82 @@ const arrayData = [
       "<tr><td>Vodka</td><td>1/2 oz</td></tr><tr><td>Orange Juice</td><td>6 oz</td></tr><tr><td>Orange Slice</td><td>Garnish</td></tr>",
     desc: "The <b>Screwdriver</b> has a simple, refreshing flavor, with the bright, tangy citrus notes of orange juice perfectly balanced by the smooth, neutral taste of vodka.",
   },
+  {
+    id: 19,
+    imagePath: "../img/mojito.png",
+    title: "Mojito",
+    recipe: "https://www.allrecipes.com/recipe/229649/easy-mojitos/",
+    strength: 1,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey"},
+      { What: "Angostura bitters"},
+      { What: "Orange Wedge"},
+      { What: "Lemon Zest"},
+      { What: "Sugar Cube"},
+      { What: "Sour Cherries"},
+    ],
+    in_test:
+      "<tr><td>White Rum</td><td>1 1/2 oz</td></tr><tr><td>Club Soda</td><td>4-5 oz</td></tr><tr><td>Simple Syrup</td><td>1 tsp</td></tr><tr><td>Lime Slices</td><td>2</td></tr><tr><td>Mint Leaves</td><td>12</td></tr>",
+    desc: "The <b>Mojito</b> has a refreshing and lively flavor profile, with a balance of zesty lime, cool mint, sweet sugar, and a subtle kick of rum, all lifted by the effervescence of soda water.",
+  },
+  {
+    id: 20,
+    imagePath: "../img/vodka-soda.jpg",
+    title: "Vodka Soda",
+    recipe: "https://dinnersdishesanddesserts.com/vodka-soda-recipe/",
+    strength: 1,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey"},
+      { What: "Angostura bitters"},
+      { What: "Orange Wedge"},
+      { What: "Lemon Zest"},
+      { What: "Sugar Cube"},
+      { What: "Sour Cherries"},
+    ],
+    in_test:
+      "<tr><td>Vodka</td><td>1 oz</td></tr><tr><td>Club Soda / Tonic Water</td><td>4-5 oz</td></tr><tr><td>Lime</td><td>1 slice</td></tr>",
+      desc: "The <b>Vodka Soda</b> has a clean, crisp flavor profile, with the smooth, neutral taste of vodka balanced by the light, refreshing effervescence of soda water.",
+    },
+  {
+    id: 21,
+    imagePath: "../img/whiskey-highball.png",
+    title: "Whiskey Highball",
+    recipe: "https://www.thespruceeats.com/classic-highball-cocktail-recipe-761448",
+    strength: 1,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey"},
+      { What: "Angostura bitters"},
+      { What: "Orange Wedge"},
+      { What: "Lemon Zest"},
+      { What: "Sugar Cube"},
+      { What: "Sour Cherries"},
+    ],
+    in_test:
+      "<tr><td>Whiskey</td><td>2 oz</td></tr><tr><td>Club Soda / Tonic Water</td><td>4-5 oz</td></tr>",
+    desc: "The <b>Whiskey Soda</b> has a smooth, slightly smoky flavor profile, with the rich, warming taste of whiskey complemented by the effervescent, neutral refreshment of soda water.",
+  },
+  {
+    id: 21,
+    imagePath: "../img/rang-water.png",
+    title: "Ranch Water",
+    recipe: "https://cookieandkate.com/ranch-water-recipe/",
+    strength: 1,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey"},
+      { What: "Angostura bitters"},
+      { What: "Orange Wedge"},
+      { What: "Lemon Zest"},
+      { What: "Sugar Cube"},
+      { What: "Sour Cherries"},
+    ],
+    in_test:
+      "<tr><td>Tequila</td><td>1 1/2 oz</td></tr><tr><td>Club Soda</td><td>4-5 oz</td></tr><tr><td>Lime Juice</td><td>1 oz</td></tr><tr><td>Salt</td><td>Pinch</td></tr><tr><td>Lime Wedge</td><td>Garnish</td></tr>",
+    desc: "<b>Ranch Water</b> has a crisp, refreshing flavor profile, with the bright tang of lime, a hint of agave sweetness, and the clean, bubbly lift of soda water, all highlighting the earthy notes of tequila.",
+  },
 ];
 
 const cardContainer = document.querySelector(".cocktail-div");
