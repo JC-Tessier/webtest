@@ -411,6 +411,25 @@ const arrayData = [
       "<tr><td>Tequila</td><td>1 1/2 oz</td></tr><tr><td>Club Soda</td><td>4-5 oz</td></tr><tr><td>Lime Juice</td><td>1 oz</td></tr><tr><td>Salt</td><td>Pinch</td></tr><tr><td>Lime Wedge</td><td>Garnish</td></tr>",
     desc: "<b>Ranch Water</b> has a crisp, refreshing flavor profile, with the bright tang of lime, a hint of agave sweetness, and the clean, bubbly lift of soda water, all highlighting the earthy notes of tequila.",
   },
+  {
+    id: 22,
+    imagePath: "../img/ace-of-heart.png",
+    title: "Ace of Hearts",
+    recipe: "https://www.saq.com/en/as-de-coeur-ec?srsltid=AfmBOopjzZLqUIf-OEHqoEOfftlm_-cU1HXbyvLYNATwGFZuUQio0dvb",
+    strength: 1,
+    rating: 0,
+    ingredients: [
+      { What: "Whiskey"},
+      { What: "Angostura bitters"},
+      { What: "Orange Wedge"},
+      { What: "Lemon Zest"},
+      { What: "Sugar Cube"},
+      { What: "Sour Cherries"},
+    ],
+    in_test:
+      "<tr><td>Spiced Rum</td><td>1 1/2 oz</td></tr><tr><td>Tonic Water</td><td>2 oz</td></tr><tr><td>Cherry Cola</td><td>6 oz</td></tr><tr><td>Orange Slice</td><td>Garnish</td></tr>",
+    desc: "The <b>Ace of Hearts</b> cocktail offers a balanced flavor profile with bright citrus notes, a subtle herbal undertone, and a smooth, slightly sweet finish, making it both refreshing and complex.",
+  },
 ];
 
 const cardContainer = document.querySelector(".cocktail-div");
